@@ -1,5 +1,5 @@
 <?php
-namespace phil1895\MnsQueue;
+namespace phil1895\AliyunMNS;
 
 require_once(dirname(__FILE__) . '/mns/mns-autoloader.php');
 
