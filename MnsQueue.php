@@ -1,5 +1,5 @@
 <?php
-namespace phil1895\AliyunMNS;
+namespace Philway\AliyunMNS;
 
 require_once(dirname(__FILE__) . '/mns/mns-autoloader.php');
 
@@ -31,11 +31,11 @@ class MnsQueue
 
     public $queue;
 
-    public function __construct()
+    public function __construct($accessId, $accessKey, $endPoint)
     {
-        $accessId = Yii::$app->params['mns.accessId'];
-        $accessKey = Yii::$app->params['mns.accessKey'];
-        $endPoint = Yii::$app->params['mns.isInternal'] ? Yii::$app->params['mns.endPointInternal'] : Yii::$app->params['mns.endPoint'];
+        $accessId = $accessId;
+        $accessKey = $accessKey;
+        $endPoint = $endPoint;
         $this->client = new Client($endPoint, $accessId, $accessKey);
     }
 
