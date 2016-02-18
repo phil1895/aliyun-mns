@@ -1,7 +1,7 @@
 <?php
-namespace common\components\alimns;
+namespace phil1895\MnsQueue;
 
-require_once(dirname(__FILE__) . '/mns-autoloader.php');
+require_once(dirname(__FILE__) . '/mns/mns-autoloader.php');
 
 
 use AliyunMNS\Client;
