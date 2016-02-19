@@ -33,9 +33,6 @@ class MnsQueue
 
     public function __construct($accessId, $accessKey, $endPoint)
     {
-        $accessId = $accessId;
-        $accessKey = $accessKey;
-        $endPoint = $endPoint;
         $this->client = new Client($endPoint, $accessId, $accessKey);
     }
 
